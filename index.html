@@ -7,7 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/index.css">
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
 </head>
 <body>
 <div id="mainBody">
@@ -33,14 +36,17 @@
 
 <!-- search box -->
 <div class="fake-input">
-    <input class="search" type="text" placeholder="Images, #tags, @users oh my!">
+    <input class="search" type="text"
+    oninput="debounce(main,1000)" id="query"
+    placeholder="Images, #tags, @users oh my!" >
     <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg" alt="" srcset="">
+   <div id="movies"></div>
 </div>
 <!-- search box -->
 
 <!-- badge -->
 <div class="badge">
-    <img src="https://cdn-icons.flaticon.com/png/128/3446/premium/3446480.png?token=exp=1646582509~hmac=7a5151e417dfa13778ec2257748fe32b" alt="" srcset="">
+    <i class="fa-solid fa-award" style="font-size:40px;color:rgb(255, 255, 255);"></i>
 </div>
 <!-- badge -->
 
@@ -70,7 +76,7 @@
 <!-- navbar *************************************************** -->
 
 
-<h1 class="head">I gave her my heart, she gave me a meme.</h1>
+<h1 class="head">When this baby hits 88 memes per hour...you're gonna see some serious stuff.</h1>
 <h3 class="head2">Explore Tags</h3>
 <!-- explore -->
 <div id="explore">
@@ -82,8 +88,11 @@
 
 
 <!-- mainbody -->
+<div class="lowerbody">
+<h1 class="head">MOST VIRAL</h1>
 <div id="mainbody">
 
+</div>
 </div>
 <!-- mainbody -->
 </html>

@@ -11,14 +11,15 @@
     display: flex;
     justify-content: space-between;
 }.photos{
-    height: 100px;
-    width: 100px;
-}#explore{
+    height: 360px;
+    width: 240px;
+}
+#explore{
     display: flex;
     flex-direction: row;
     color: white;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 100px;
 }.head{
     margin: 50px 0;
     font-size: 24px;
@@ -35,22 +36,46 @@
 }
 #explore img{
     height: 100px;
-    width: 100px;
-}#explore img:hover{
+    width: 150px;
+    margin-bottom: 0;
+}#explore img:hover,#mainbody img:hover{
     transform: scale(1.0);
     transition: 1.8s;
 }.auth{
+    margin-top: -12px;
     background-color: #005d85;
     color: white;
     font-weight: bold;
     font-size: 12px;
     text-align: center;
-    height: 50px;
+    height: 55px;
     
-}.auth p{
+}.auth p,.boxes p{
     margin-top: 8px;
-}.mainbody{
+}
+#mainbody{
+    display: flex;
+    flex-wrap: wrap;
     margin: 20px 15px;
+    padding: 0 100px;
+  
+}
+.lowerbody{
+    margin-top: -50px;
+    background-color: #2e3035;
+}
+.boxes{
+    margin-top: -12px;
+    margin-bottom: 20px;
+    background-color: #616368;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    height:65px;
+    font-family: "Proxima Nova ExtraBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}.evenData{
+    height: 500px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -59,3 +84,9 @@
   }
   
   }
+  @media only screen and (max-width: 540px) {
+    .head{
+        display: none;
+    }
+    
+    }

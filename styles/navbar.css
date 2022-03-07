@@ -9,6 +9,7 @@
 }
 .nav {
   padding: 10px;
+
 }
 .postDiv img {
   height: 30px;
@@ -61,10 +62,11 @@
   /* opacity: 65%; */
   outline: none;
 }
-.badge img {
-  height: 40px;
-  width: 50px;
-  margin-left: 150px;
+.badge i {
+  /* height: 40px;
+  width: 50px; */
+  margin-left: 250px;
+  cursor: pointer;
 }
 .add {
   width: 110px;
@@ -109,10 +111,31 @@
   width: 350px;
   display: flex;
   justify-content: space-around;
+}#movies{
+  position: absolute;
+            z-index: 1;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            width: 500px;
+            border: 1px solid black;
+            background: rgb(107, 105, 105);
+            border-top: none;
+            font-size: 16px;
+            padding-left: 10px;
+            line-height: 1.6;
+            height: 150px;
+            overflow-x: scroll;
+            display: none;
+}#movies p{
+  cursor: pointer;
 }
 
+
+
+
+
 @media only screen and (max-width: 1250px) {
-  .search {
+  .search,#movies {
     width: 300px;
   }
   .fake-input img {
@@ -121,7 +144,7 @@
 }
 
 @media only screen and (max-width: 1050px) {
-  .search {
+  .search,#movies {
     width: 200px;
   }
   .fake-input img {
@@ -132,11 +155,14 @@
   }
   .postDiv {
     width: 30px;
+  }.badge i{
+    display: none;
+  
   }
 }
 
 @media only screen and (max-width: 690px) {
-  .fake-input,  .fake-input img,.badge{
+  .fake-input,  .fake-input img,.badge i,#movies{
       display: none;
   }
 
