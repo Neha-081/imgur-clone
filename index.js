@@ -47,8 +47,8 @@ async function imagesExplore() {
   
   }
   
-// imagesMain()
-// imagesExplore()
+imagesMain()
+imagesExplore()
 
 var timerId;
 
